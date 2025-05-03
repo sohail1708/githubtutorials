@@ -24,7 +24,7 @@ def success(score):
     if score >=50:
         result = "Congratulations! You passed the exam."
     else:
-        result = "Sorry, you failed the exam."
+        result = "Sorry, you failed the exam. Better luck next time"
     return render_template("/success.html", result=result)
 
 @app.route("/profile/<username>")

@@ -22,7 +22,7 @@ def form_contact():
 @app.route("/success/<int:score>")
 def success(score):
     if score >=50:
-        result = "Congratulations! You passed the exam. Good job bro"
+        result = "Congratulations! You passed the exam. Good job bro!! you should come again"
     else:
         result = "Sorry, you failed the exam. Better luck next time"
     return render_template("/success.html", result=result)
